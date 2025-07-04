@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>X# Interpreter Documentation</title>
+  <style>
+    body { font-family: 'Courier New', monospace; background: #f9f9f9; padding: 20px; color: #333; }
+    h1 { color: #2c3e50; }
+    h2 { color: #34495e; border-bottom: 1px solid #ccc; }
+    code { background: #eee; padding: 2px 5px; border-radius: 3px; }
+    .cmd { background: #222; color: #0f0; padding: 5px 10px; margin: 5px 0; border-radius: 3px; }
+    ul { list-style: square; }
+  </style>
+</head>
+<body>
+
+  <h1>📘 X# Interpreter Documentation</h1>
+  <p>Welcome to <strong>X# Interpreter</strong> v2.5.1, a shell-based command interface and scripting environment created by <strong>Athaya</strong>.</p>
+
+  <h2>🧰 What is X#?</h2>
+  <p>X# is a custom scripting language that mimics Bash + Python with simplified syntax. It also has its own package system, virtual shell, and CLI-based OS interface.</p>
+
+  <h2>💻 Getting Started</h2>
+  <p>When you start <code>main.py</code>, you'll enter the X# shell:</p>
+  <div class="cmd">~ $</div>
+  <p>Type <code>help</code> to see all commands.</p>
+
+  <h2>📦 Built-in Commands</h2>
+  <ul>
+    <li><code>mkdir [name]</code> – Create a folder</li>
+    <li><code>dir</code> – List directories</li>
+    <li><code>cd [path]</code> – Change directory</li>
+    <li><code>pwd</code> – Print current directory</li>
+    <li><code>tree</code> – Show file tree</li>
+    <li><code>math [expr]</code> – Calculator</li>
+    <li><code>pkg install [pkg]</code> – Install package (internal & pip)</li>
+    <li><code>pyrun</code> – Run Python interpreter</li>
+    <li><code>alias [a] [b]</code> – Create alias</li>
+    <li><code>xeditor</code> – Run X# code editor</li>
+    <li><code>windai</code> – Open WindAI assistant</li>
+    <li><code>selfdestruct</code> – Self-destruct (exit program)</li>
+  </ul>
+
+  <h2>🧠 WindAI</h2>
+  <p>WindAI is an experimental chatbot assistant that responds to simple queries when installed using <code>pkg install windai</code>.</p>
+
+  <h2>✍️ X# Syntax Sample</h2>
+  <pre><code>nugget("Hello World")
+
+if name is "Athaya" ::
+    nugget("You're the dev!")
+
+else::
+    nugget("Welcome user")
+</code></pre>
+
+  <h2>📁 Save Location</h2>
+  <p>Files and code are saved in <code>/storage/emulated/0/X#init/</code> directory.</p>
+
+  <h2>🚀 Version</h2>
+  <p>Current version: <strong>2.5.1</strong></p>
+
+  <footer>
+    <hr>
+    <p style="font-size: 0.8em;">© 2025 X# Language by Athaya. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
