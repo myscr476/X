@@ -36,6 +36,7 @@ blending imagination, logic, and humor into one compact terminal.
 git clone https://github.com/myscr476/X-Interpreter.git
 cd X-Interpreter
 python main.py
+```
 
 ## 🐧 Run on Termux (Android Terminal)
 
@@ -47,6 +48,7 @@ git clone https://github.com/myscr476/X-Interpreter.git
 cd X-Interpreter
 pip install requests
 python main.py
+```
 
 2. You’ll see:
 
