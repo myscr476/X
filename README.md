@@ -1,6 +1,6 @@
 # X# Interpreter
 
-A powerful Gen-Z-style command-line interface built by **Athaya** —  
+A powerful Gen-Z-style command-line interface built by **myscr476 (or athaya)** —  
 blending imagination, logic, and humor into one compact terminal.
 
 ---
@@ -36,3 +36,23 @@ blending imagination, logic, and humor into one compact terminal.
 git clone https://github.com/myscr476/X-Interpreter.git
 cd X-Interpreter
 python main.py
+
+## 🐧 Run on Termux (Android Terminal)
+
+1. Open Termux and type:
+
+```bash
+pkg install python git
+git clone https://github.com/myscr476/X-Interpreter.git
+cd X-Interpreter
+pip install requests
+python main.py
+
+2. You’ll see:
+
+
+
+Welcome to X# Interpreter.
+Type 'help' for help.
+
+✅ Now you can run full CLI commands like math 5×3+2, pkg install, or windai!
