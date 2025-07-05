@@ -1,0 +1,15 @@
+nugget("Math in X# Language")
+
+use math
+
+nugget("3 plus 4 =")
+nugget(3 plus 4)
+
+nugget("10 minus 2 =")
+nugget(10 minus 2)
+
+nugget("6 times 7 =")
+nugget(6 * 7)
+
+nugget("12 divided by 3 =")
+nugget(12 / 3)
