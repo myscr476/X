@@ -164,16 +164,6 @@ while True:
             print("Packages found:")
             for m in matched:
                 print(f" - {m}")
-                if pkginstaller == "yes":
-                    print(" - jvrun")
-                if pkginstallera == "true":
-                    print(" - jvscrrun")
-                if xstatus == "True":
-                    print(" - xeditor")
-                if windai == "SOYES":
-                    print(" - windai")
-                if canloginasroot:
-                    print(" - proot-xlogin")
         else:
             print("\033[1;41mModuleNotFoundError: No module found\033[0m")
 
