@@ -26,7 +26,9 @@ blending imagination, logic, and humor into one compact terminal.
   - Includes Easter eggs like: `who is the real dev` → **“The real dev is Athaya.”**
 
 - 🛠️ **File & Directory Tools**
-  - `mkdir`, `cd`, `tree`, `mkfl`, `cat`, etc.
+  - `mkdir`, `cd`, `tree`, `mkfl`, and other-
+- ✍️ **Added Nano features like in Linux**
+  - Mini nano features
 
 ---
 
