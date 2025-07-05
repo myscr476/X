@@ -38,7 +38,7 @@ blending imagination, logic, and humor into one compact terminal.
 
 ```bash
 git clone https://github.com/myscr476/X..git
-cd X-Interpreter
+cd X.
 python main.py
 ```
 
@@ -49,7 +49,7 @@ python main.py
 ```bash
 pkg install python git
 git clone https://github.com/myscr476/X..git
-cd X-Interpreter
+cd X.
 pip install requests
 python main.py
 ```
