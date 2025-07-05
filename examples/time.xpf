@@ -1,0 +1,6 @@
+use time
+
+nugget("This program imports 'time' module.")
+
+if "hello" is same with "hello" ::
+    nugget("Imported successfully.")
