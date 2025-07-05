@@ -1,0 +1,10 @@
+use time
+
+nugget("Welcome to X# Starter Template!")
+
+if 1 plus 1 is same with 2 ::
+    nugget("Math works!")
+else::
+    nugget("Something went wrong...")
+
+nugget("End of program.")
