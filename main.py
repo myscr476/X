@@ -71,7 +71,8 @@ commands = [
     "repo",
     "cd ",
     "pwd",
-    "math"
+    "math",
+    "nano"
 ]
 xstatus = "NO"
 windai = "soxca"
@@ -745,7 +746,67 @@ while True:
             print("Error: Division by zero is not allowed.")
         except Exception as e:
             print("Invalid input. Use proper math expression like '3+4*2-1'.")
-        
+
+
+    elif command.startswith("nano "):
+        filename = command[len("nano "):].strip()
+        filepath = os.path.join(cdirectory, filename)
+        code_lines = []
+
+        if os.path.exists(filepath):
+            try:
+                with open(filepath, "r") as f:
+                    code_lines = f.read().splitlines()
+                print(f"Opened existing file: {filename}")
+            except Exception as e:
+                print(f"Error reading file: {e}")
+                continue
+        else:
+            print(f"Creating new file: {filename}")
+
+        print("\n--- X# Nano Editor ---")
+        print("Type new lines. Special commands:")
+        print("  :wq       → save & quit")
+        print("  :q        → quit without saving")
+        print("  :rm [n]   → remove line number n")
+        print("  :list     → show current content\n")
+
+        while True:
+            line = input("~nano> ").strip()
+
+            if line == ":wq":
+                try:
+                    with open(filepath, "w") as f:
+                        for cl in code_lines:
+                            f.write(cl + "\n")
+                    print(f"File '{filename}' saved successfully.")
+                except Exception as e:
+                    print(f"Failed to save file: {e}")
+                break
+
+            elif line == ":q":
+                print("Exited without saving.")
+                break
+
+            elif line.startswith(":rm "):
+                try:
+                    index = int(line.split()[1]) - 1
+                    if 0 <= index < len(code_lines):
+                        deleted = code_lines.pop(index)
+                        print(f"Line {index + 1} ('{deleted}') removed.")
+                    else:
+                        print("Invalid line number.")
+                except Exception:
+                    print("Wrong format. Use :rm [line number]")
+
+            elif line == ":list":
+                print("\n--- Current Content ---")
+                for i, l in enumerate(code_lines, 1):
+                    print(f"{i:>2}. {l}")
+                print("------------------------\n")
+
+            else:
+                code_lines.append(line)
     else:
         closest = difflib.get_close_matches(command, commands, n=3, cutoff=0.4)
         if closest:
