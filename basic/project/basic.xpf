@@ -1,0 +1,5 @@
+nugget("This is story."
+nugget("You have two chance: Quit or Not?")
+
+nugget("Not?")
+nugget("Okay.")
