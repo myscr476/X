@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>X# Interpreter Documentation Part 2 — Syntax Play</title>
+  <style>
+    body { font-family: 'Courier New', monospace; background: #f9f9f9; padding: 20px; color: #333; }
+    h1 { color: #2c3e50; }
+    h2 { color: #34495e; border-bottom: 1px solid #ccc; }
+    code { background: #eee; padding: 2px 5px; border-radius: 3px; }
+    .cmd { background: #222; color: #0f0; padding: 5px 10px; margin: 5px 0; border-radius: 3px; }
+    ul { list-style: square; }
+    textarea {
+      width: 100%;
+      height: 150px;
+      font-family: 'Courier New', monospace;
+      font-size: 16px;
+      background: #222;
+      color: #0f0;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      margin-top: 10px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>X# DOCUMENTATION PART 2</h1>
+  <h2>This documentation is a new part of X# Documentation.</h2>
+  <h2>This part is not in X# Interpreter, but in X# IDE v2.</h2>
+  
+  <h3>Sample syntax:</h3>
+  <p>nugget("Hello world!")</p>
+  <p>nugget("Sample syntax.")</p>
+  <button onclick="runNow()">Run Code</button>
+  
+  <h3>Or, run a <strong>error.</strong></h3>
+  <p>nuggett(This will not working!)</p>
+  <button onclick="runError()">Run Error</button>
+  
+  <h4>Did you see me? If you want to go to documentation part 1, click this button.</h4>
+  <a href="documentation.html">Go to documentation</a>
+
+  <br><br>
+  <progress id="loadingBar" value="0" max="100"></progress>
+  <p id="status">Loading another syntax...</p>
+  
+  <div id="syntaxRandom"></div>
+  <textarea id="syntaxEditor" placeholder="Edit the syntax here..."></textarea>
+  <button id="buttonRun" style="display: none;" onclick="runCode()">Run Code</button>
+  <button id="runEditedButton" style="display: none;" onclick="run()">Run Syntax Edited</button>
+
+  <script>
+    const syntax = [
+      "nugget('hello world!')",
+      "if 5 != 6::\nnugget('not same')"
+    ];
+    
+    const loadingBar = document.getElementById("loadingBar");
+    const status = document.getElementById("status");
+    const syntaxRandom = document.getElementById("syntaxRandom");
+    const buttonRun = document.getElementById("buttonRun");
+    const runEditedButton = document.getElementById("runEditedButton");
+    const syntaxEditor = document.getElementById("syntaxEditor");
+    
+    let randomChoice = "";
+
+    const interval = setInterval(function () {
+      if (loadingBar.value < 100) {
+        loadingBar.value += 9;
+      } else {
+        clearInterval(interval);
+        status.innerHTML = "Done!";
+
+        // ✅ Jangan pakai const lagi ya
+        randomChoice = syntax[Math.floor(Math.random() * syntax.length)];
+        syntaxRandom.innerText = randomChoice;
+        syntaxEditor.style.display = "block";
+        syntaxEditor.value = randomChoice;
+        buttonRun.style.display = "inline-block";
+        runEditedButton.style.display = "inline-block";
+      }
+    }, 100);
+    
+    function runCode() {
+      alert("Runned output: \n" + randomChoice);
+    }
+    
+    function run() {
+      const editedCode = syntaxEditor.value;
+      alert("Running your edited syntax:\n" + editedCode);
+    }
+
+    function runNow() {
+      alert("Hello world!\nSample syntax.");
+    }
+
+    function runError() {
+      alert("SyntaxFault: not a variable: line 1\nSyntaxFault: not a valid nugget()");
+    }
+  </script>
+</body>
+</html>
