@@ -69,3 +69,5 @@ Type 'help' for help.
 
 This project is licensed under the Apache License 2.0.  
 See the [LICENSE](LICENSE) file for more details.
+
+made with python, see the logo here: ![Python](https://img.shields.io/badge/code-python-blue?logo=python)
