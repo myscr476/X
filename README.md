@@ -31,6 +31,8 @@ blending imagination, logic, and humor into one compact terminal.
 - ✍️ **Added Nano features like in Linux**
   - Mini nano features added
   - Editing files in interpreter
+- 💿 **Added update feature**
+  - You can update to 3.0.0 (but if you have a chance...)
 
 ---
 
@@ -62,3 +64,8 @@ Welcome to X# Interpreter.
 Type 'help' for help.
 
 ✅ Now you can run full CLI commands like math 5×3+2, pkg install, or windai!
+
+## License
+
+This project is licensed under the Apache License 2.0.  
+See the [LICENSE](LICENSE) file for more details.
