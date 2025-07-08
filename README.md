@@ -52,7 +52,7 @@ python main.py
 pkg install python git
 git clone https://github.com/myscr476/X..git
 cd X.
-pip install requests
+pip install -r requirements.txt
 python main.py
 ```
 
