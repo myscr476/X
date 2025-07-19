@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-black text-white font-mono">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Your X#</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center px-4">
+
+  <div class="bg-gray-900 p-6 rounded-xl shadow-xl w-full max-w-lg">
+    <h2 class="text-2xl font-bold text-green-400 mb-4 text-center">🛠 Create Your X# Edition</h2>
+    
+    <label class="block text-gray-300 mb-1">Your Edition Name:</label>
+    <input type="text" id="editionName" class="w-full p-2 bg-black border border-green-500 rounded mb-4" placeholder="e.g. X# Ghost Edition" />
+
+    <label class="block text-gray-300 mb-1">Custom Command:</label>
+    <input type="text" id="customCmd" class="w-full p-2 bg-black border border-green-500 rounded mb-4" placeholder="e.g. ghostsay [text]" />
+
+    <button onclick="generate()" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-2 rounded">
+      🎉 Generate My X#
+    </button>
+
+    <div id="result" class="mt-6 text-sm text-gray-200 hidden">
+      <h3 class="text-yellow-400 font-bold mb-2">✅ Your Template:</h3>
+      <pre class="bg-black p-4 border border-green-500 rounded overflow-x-auto" id="templateBox"></pre>
+    </div>
+  </div>
+
+  <script>
+    function generate() {
+      const name = document.getElementById("editionName").value.trim();
+      const cmd = document.getElementById("customCmd").value.trim();
+      const result = document.getElementById("result");
+      const template = document.getElementById("templateBox");
+
+      if (!name || !cmd) {
+        alert("Please fill in all fields!");
+        return;
+      }
+
+      template.innerText =
+`// ${name} - Custom X# Template
+const commands = {
+  help: "Available: help, ${cmd}",
+  ${cmd.split(" ")[0]}: (msg) => "👻 " + msg,
+};`;
+
+      result.classList.remove("hidden");
+    }
+  </script>
+</body>
+</html>
