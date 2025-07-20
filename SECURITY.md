@@ -6,8 +6,8 @@ We actively maintain the following versions of this project:
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 1.x     | ✅ Yes              |
-| 0.x     | ❌ No               |
+| latest    | ✅ Yes              |
+| <2.x.x     | ❌ No               |
 
 ## Reporting a Vulnerability
 
