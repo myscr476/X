@@ -70,6 +70,15 @@ Type 'help' for help.
 This project is licensed under the Apache License 2.0.  
 See the [LICENSE](LICENSE) file for more details.
 
-made with python, see the logo here: ![Python](https://img.shields.io/badge/code-python-blue?logo=python)
+## Windows Support
 
-By Athaya, 2025.
+Yes! We support windows.
+But, if you want to run in Windows, note tha you need to "Run as administrator".
+
+Tips:
+
+1. Click the file and hold right mouse button.
+2. Click "Run as administrator".
+3. If asked "Do you want this file to modify the system on your computer?" or something similar, click "Yes".
+4. And runned!
+You need to install Python before run this file.
