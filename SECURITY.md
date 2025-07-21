@@ -6,8 +6,8 @@ We actively maintain the following versions of this project:
 
 | Version | Supported          |
 | ------- | ------------------ |
-| latest    | ✅ Yes              |
-| <2.x.x     | ❌ No               |
+| latest    | Yes              |
+| <2.x.x     | No               |
 
 ## Reporting a Vulnerability
 
@@ -21,6 +21,18 @@ Please include the following:
 - Steps to reproduce it
 - Any logs or screenshots if applicable
 - Your recommended fix (optional)
+
+## Supported Device
+
+| Device     | Supported   |
+|-----|--------------|
+| Android    | Yes  |
+| Windows     | Yes |
+|  Darwin (macOS)    | No
+|  Linux    | No |
+
+If your device is Darwin/Linux, please fork **main.py** for directory and another settings.
+  
 
 ## Our Commitments
 
