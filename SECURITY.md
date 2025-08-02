@@ -31,7 +31,7 @@ Please include the following:
 |  Darwin (macOS)    | No
 |  Linux    | No |
 
-If your device is Darwin/Linux, please fork **main.py** for directory and another settings.
+If your device is Darwin/Linux, please fork [main.py](main.py) for directory and another settings.
   
 
 ## Our Commitments
