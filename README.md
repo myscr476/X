@@ -26,13 +26,18 @@ blending imagination, logic, and humor into one compact terminal.
   - Includes Easter eggs like: `who is the real dev` → **“The real dev is Athaya.”**
 
 - 🛠️ **File & Directory Tools**
-  - `mkdir`, `cd`, `tree`, `mkfl`, `dir`
+  - `mkdir`, `cd`, `tree`, `mkfl`, `dir`, and more.
   
 - ✍️ **Added Nano features like in Linux**
   - Mini nano features added
   - Editing files in interpreter
+
 - 💿 **Added update feature**
   - You can update to 3.0.0 (but if you have a chance...)
+
+- 🔓 Chroot and Chmod Features
+  - Chroot command added (simulation only...)
+  - Chmod for change a mod for a file.
 
 ---
 
@@ -59,9 +64,10 @@ python main.py
 2. You’ll see:
 
 
-
-Welcome to X# Interpreter.
+``` Text
+Welcome to X# Interpreter!
 Type 'help' for help.
+```
 
 ✅ Now you can run full CLI commands like math 5×3+2, pkg install, or windai!
 
@@ -82,3 +88,7 @@ Tips:
 3. If asked "Do you want this file to modify the system on your computer?" or something similar, click "Yes".
 4. And runned!
 You need to install Python before run this file.
+
+## Fork System
+Fork to this [repository.](https://github.com/myscr476/X/fork)
+If you want to add main.py some feature like directory for Linux and Darwin, it's okay to fork!
