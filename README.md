@@ -39,6 +39,9 @@ blending imagination, logic, and humor into one compact terminal.
   - Chroot command added (simulation only...)
   - Chmod for change a mod for a file.
 
+- 🔄 Added Support for Darwin (macOS) and Linux
+  - For a long time, Support for Darwin, Linux is added!
+
 ---
 
 ## 📥 Installation
@@ -91,4 +94,4 @@ You need to install Python before run this file.
 
 ## Fork System
 Fork to this [repository.](https://github.com/myscr476/X/fork)
-If you want to add main.py some feature like directory for Linux and Darwin, it's okay to fork!
+If you want to add main.py some feature like directory for another OS, it's okay to fork!
