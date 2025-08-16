@@ -28,10 +28,11 @@ Please include the following:
 |-----|--------------|
 | Android    | Yes  |
 | Windows     | Yes |
-|  Darwin (macOS)    | No
-|  Linux    | No |
+|  Darwin (macOS)    | Yes
+|  Linux    | Yes |
+| Another OS | No |
 
-If your device is Darwin/Linux, please fork [main.py](main.py) for directory and another settings.
+If your device is another OS, please fork [main.py](main.py) for directory and another settings.
   
 
 ## Our Commitments
