@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ - Section X#</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      background-image: url("Tak berjudul3009_20260118130658");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    body::before {
+      content: "T";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+      z-index: -1;
+    }
+
+    h1, h4, label {
+      text-align: center;
+    }
+
+    form {
+      max-width: 530px;
+      margin: 20px auto;
+      background: rgba(0,0,0,0.4);
+      padding: 100px;
+      border-radius: 10px;
+    }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    .centered {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="centered">
+    <img src="Rookie.png" alt="Rookie">
+  </div>
+
+  <div class="centered">
+    <h1>X# official FAQ</h1>
+  </div>
+
+  <div class="centered">
+    <h4>You can FAQ to omarlubis49@gmail.com with this web.</h4>
+  </div>
+
+  <form action="mailto:omarlubis49@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="email@domain.com" required>
+
+    <label for="question">Question/Feedback:</label>
+    <textarea id="question" name="question" rows="5" placeholder="Your question..." required></textarea>
+
+    <button type="submit">Done!</button>
+  </form>
+
+</body>
+</html>
