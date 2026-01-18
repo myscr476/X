@@ -33,7 +33,11 @@ Please include the following:
 | Another OS | No |
 
 If your device is another OS, please fork [main.py](main.py) for directory and another settings.
-  
+
+## Why is this so important?
+
+- If anything happens, you can email us.
+- I'm committed to ensuring this project runs smoothly. That's why we're offering an FAQ (I'll be creating a website for that later).
 
 ## Our Commitments
 
