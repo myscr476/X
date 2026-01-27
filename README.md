@@ -35,12 +35,15 @@ blending imagination, logic, and humor into one compact terminal.
 - 💿 **Added update feature**
   - You can update to 3.0.0 (but if you have a chance...)
 
-- 🔓 Chroot and Chmod Features
+- 🔓 **Chroot and Chmod Features**
   - Chroot command added (simulation only...)
   - Chmod for change a mod for a file.
 
-- 🔄 Added Support for Darwin (macOS) and Linux
+- 🔄 **Added Support for Darwin (macOS) and Linux**
   - For a long time, Support for Darwin, Linux is added!
+
+- 🎦 **Wait for the preview!**
+  - Preview will be coming soon, so stay tuned!
 
 ---
 
